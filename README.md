@@ -7,6 +7,9 @@ Repo 1 contains application code and tests only. Repo 2 owns Jenkinsfiles, Docke
 - Frontend: React + Vite, build output `dist/`, proxies `/api` to backend during local development
 
 ## Local run
+Use Node.js 22.22.2 or later (Node.js 24 LTS is recommended) with a current npm version. The frontend's current dependencies are incompatible with Node.js 14.
+
+Run these commands from the repository root:
 ```bash
 npm run install:all
 npm run test:all
