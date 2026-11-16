@@ -1,0 +1,12 @@
+{
+  "name": "sample-fullstack-app",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend ci && npm --prefix frontend ci",
+    "test:all": "npm --prefix backend test && npm --prefix frontend test -- --run",
+    "dev": "npx concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
